@@ -7,21 +7,55 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #e6ffe6; /* Verde discreto */
+            background-color: #f0f8ff; /* Azul claro */
             color: #000;
-            position: relative;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .service-section {
+            padding: 4rem 0;
+            background-color: #e9f2fb; /* Azul muito claro */
+        }
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1rem;
+            color: #007bff;
+        }
+        .service-description {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            color: #333;
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Faturamento de Contas Médicas</a>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand mx-auto" href="#">Faturamento de Contas Médicas</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
@@ -30,18 +64,43 @@
             </div>
         </nav>
 
-        <section id="services" class="py-5">
+        <section id="services" class="service-section">
             <div class="container">
                 <h2 class="text-center">Serviços</h2>
-                <p class="text-center">Oferecemos serviços de faturamento de contas médicas para clínicas e hospitais.</p>
+                <p class="text-center">Oferecemos uma gama completa de serviços especializados no faturamento de contas médicas, com foco em garantir a eficiência e precisão em todas as etapas do processo. Nossos serviços incluem:</p>
+                
                 <div class="row">
-                    <div class="col-md-4">
-                        <h3>Serviço 1</h3>
-                        <p>Descrição do serviço 1.</p>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-title">Faturamento de Contas Hospitalares de Todos os Convênios</div>
+                            <p class="service-description">Realizamos o faturamento de contas hospitalares para todos os convênios, assegurando que todas as informações necessárias sejam incluídas corretamente e de acordo com as exigências específicas de cada convênio. Nosso objetivo é garantir que o processo de faturamento seja rápido e eficiente, minimizando erros e garantindo a máxima aprovação dos valores faturados.</p>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <h3>Serviço 2</h3>
-                        <p>Descrição do serviço 2.</p>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-title">Envio de Guias no Portal</div>
+                            <p class="service-description">Oferecemos o serviço de envio de guias no portal dos convênios, agilizando o processo de submissão de documentos necessários para a cobrança dos serviços prestados. Este processo é essencial para garantir a conformidade com as exigências dos convênios e para evitar atrasos nos pagamentos.</p>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-            
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-title">Acompanhamento de Pagamento</div>
+                            <p class="service-description">Realizamos o acompanhamento contínuo dos pagamentos, monitorando todas as fases do processo até a confirmação do recebimento. Este acompanhamento é crucial para identificar e resolver rapidamente quaisquer problemas que possam surgir, garantindo que os pagamentos sejam recebidos de forma pontual e correta.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-title">Recurso de Glosa</div>
+                            <p class="service-description">Tratamos de todos os aspectos relacionados ao recurso de glosa, apresentando as justificativas e documentações necessárias para contestar valores não pagos pelos convênios. Nossa equipe tem experiência em lidar com as diversas razões de glosa e trabalha para recuperar os valores devidos, assegurando que nossos clientes recebam a remuneração justa pelos serviços prestados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

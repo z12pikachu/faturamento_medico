@@ -7,32 +7,72 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #e6ffe6; /* Verde discreto */
+            background-color: #cce7ff; /* Azul claro */
             color: #000;
-            position: relative;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
         }
         .content {
             position: relative;
             z-index: 1;
         }
         .bg-transparent {
-            background-color: rgba(255, 255, 255, 0.6);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
         }
         .logo-image {
-            max-width: 100%;
+            max-width: 200px;
             height: auto;
+        }
+        .navbar {
+            font-size: 1.25rem; /* Aumentando o tamanho da fonte da navbar */
+            padding: 1.5rem; /* Aumentando o padding da navbar */
+            background-color: #007bff; /* Alterando a cor de fundo da navbar */
+        }
+        .navbar-nav {
+            text-align: center;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important; /* Alterando a cor do texto da navbar para branco */
+        }
+        .nav-item {
+            margin: 0 15px;
+        }
+        @media (max-width: 767px) {
+            .nav-item {
+                margin: 10px 0;
+            }
+        }
+        .section-home {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom right, #cce7ff, #e6f3ff);
+            padding: 2rem;
+        }
+        h1.display-4 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .lead {
+            font-size: 1.25rem;
+            color: #333;
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Faturamento de Contas Médicas</a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand mx-auto" href="#">Faturamento de Contas Médicas</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
@@ -41,11 +81,9 @@
             </div>
         </nav>
 
-        <section id="home" class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <section id="home" class="section-home">
             <div class="text-center bg-transparent p-5 rounded">
-                <h1 class="display-4">Marcos Guilherme</h1>
-                <p class="lead">Faturamento de Contas Médicas de Clínicas e Hospitais</p>
-                <img src="Marcos Guilherme - Contas Médicas.jpg" alt="Logo Marcos Guilherme" class="logo-image mt-3">
+			  <img src="Marcos Guilherme - Contas Médicas.png" alt="Logo Marcos Guilherme" class=".img-fluid. max-width: 100%;">
             </div>
         </section>
     </div>
