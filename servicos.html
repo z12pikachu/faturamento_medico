@@ -24,11 +24,11 @@
         .service-card {
             background-color: #fff;
             border: 1px solid #ddd;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
             padding: 1.5rem;
             transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
         }
         .service-card:hover {
             transform: translateY(-5px);
@@ -42,8 +42,13 @@
         }
         .service-description {
             font-size: 1rem;
-            margin-top: 0.5rem;
-            color: #333;
+            margin-top: 1rem;
+            color: #555;
+        }
+        .service-icon {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -66,31 +71,42 @@
 
         <section id="services" class="service-section">
             <div class="container">
-                <h2 class="text-center">Serviços</h2>
-                <p class="text-center">Oferecemos uma gama completa de serviços especializados no faturamento de contas médicas, com foco em garantir a eficiência e precisão em todas as etapas do processo. Nossos serviços incluem:</p>
+                <h2 class="text-center mb-4">Serviços</h2>
                 
                 <div class="row">
                     <div class="col-md-6 col-lg-4">
                         <div class="service-card">
-                            <div class="service-title">Faturamento de Contas Hospitalares de Todos os Convênios</div>
+                            <div class="text-center">
+                                <i class="fas fa-hospital-alt service-icon"></i>
+                            </div>
+                            <div class="service-title text-center">Faturamento de Contas Hospitalares de Todos os Convênios</div>
                             <p class="service-description">Realizamos o faturamento de contas hospitalares para todos os convênios, assegurando que todas as informações necessárias sejam incluídas corretamente e de acordo com as exigências específicas de cada convênio. Nosso objetivo é garantir que o processo de faturamento seja rápido e eficiente, minimizando erros e garantindo a máxima aprovação dos valores faturados.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="service-card">
-                            <div class="service-title">Envio de Guias no Portal</div>
+                            <div class="text-center">
+                                <i class="fas fa-file-alt service-icon"></i>
+                            </div>
+                            <div class="service-title text-center">Envio de Guias no Portal</div>
                             <p class="service-description">Oferecemos o serviço de envio de guias no portal dos convênios, agilizando o processo de submissão de documentos necessários para a cobrança dos serviços prestados. Este processo é essencial para garantir a conformidade com as exigências dos convênios e para evitar atrasos nos pagamentos.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="service-card">
-                            <div class="service-title">Acompanhamento de Pagamento</div>
+                            <div class="text-center">
+                                <i class="fas fa-money-bill-wave service-icon"></i>
+                            </div>
+                            <div class="service-title text-center">Acompanhamento de Pagamento</div>
                             <p class="service-description">Realizamos o acompanhamento contínuo dos pagamentos, monitorando todas as fases do processo até a confirmação do recebimento. Este acompanhamento é crucial para identificar e resolver rapidamente quaisquer problemas que possam surgir, garantindo que os pagamentos sejam recebidos de forma pontual e correta.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="service-card">
-                            <div class="service-title">Recurso de Glosa</div>
+                            <div class="text-center">
+                                <i class="fas fa-hand-holding-usd service-icon"></i>
+                            </div>
+                            <div class="service-title text-center">Recurso de Glosa</div>
                             <p class="service-description">Tratamos de todos os aspectos relacionados ao recurso de glosa, apresentando as justificativas e documentações necessárias para contestar valores não pagos pelos convênios. Nossa equipe tem experiência em lidar com as diversas razões de glosa e trabalha para recuperar os valores devidos, assegurando que nossos clientes recebam a remuneração justa pelos serviços prestados.</p>
                         </div>
                     </div>
@@ -102,5 +118,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
