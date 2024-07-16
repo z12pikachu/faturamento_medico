@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Faturamento de Contas Médicas</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         body {
-           background-color: #ffffff; /* Azul claro */
+            background-color: #ffffff;
             color: #000;
             position: relative;
         }
         .navbar {
-            font-size: 1.25rem; /* Aumentando o tamanho da fonte da navbar */
-            padding: 1.5rem; /* Aumentando o padding da navbar */
-            background-color: #101011; /* Alterando a cor de fundo da navbar */
+            font-size: 1.25rem;
+            padding: 1.5rem;
+            background: url('preto.png') no-repeat center center;
+            background-size: cover;
         }
         .navbar-nav {
             text-align: center;
         }
         .navbar-brand, .nav-link {
-            color: #0c0c0c !important; /* Alterando a cor do texto da navbar para branco */
+            color: #ffffff !important; /* Alterando a cor do texto da navbar para branco */
         }
         .nav-item {
             margin: 0 15px;
@@ -34,7 +36,7 @@
 </head>
 <body>
     <div class="content">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">Faturamento de Contas Médicas</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,36 +57,10 @@
                 <p class="text-center">Entre em contato conosco por email ou telefone.</p>
                 <div class="row">
                     <div class="col-md-6">
-                        <form id="contactForm" novalidate>
-                            <div class="form-group">
-                                <label for="name">Nome</label>
-                                <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
-                                <div class="invalid-feedback">
-                                    Por favor, insira seu nome.
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Seu email" required>
-                                <div class="invalid-feedback">
-                                    Por favor, insira um email válido.
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Mensagem</label>
-                                <textarea class="form-control" id="message" rows="3" placeholder="Sua mensagem" required></textarea>
-                                <div class="invalid-feedback">
-                                    Por favor, insira uma mensagem.
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </form>
-                    </div>
-                    <div class="col-md-6">
                         <h5>Contato</h5>
                         <p>Email: <a href="mailto:guilherme.contasmedicas@gmail.com">guilherme.contasmedicas@gmail.com</a></p>
-                        <p>Telefone: (81) 9 8903 5561</p>
-                        <img src="Logo.png" class="d-block w-100" alt="...">
+                        <p>whatsapp: <a href="https://api.whatsapp.com/send?phone=5581989035561">(81) 9 8903 5561</a> <a href="https://api.whatsapp.com/send?phone=5581989035561" target="_blank"><i class="fab fa-whatsapp"></i></a></p>
+                        <img src="Logo.png" class="d-block w-100" alt="Logo">
                     </div>
                 </div>
             </div>
@@ -94,23 +70,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Validação do formulário
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                var forms = document.getElementsByClassName('needs-validation');
-                Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
 </body>
 </html>
